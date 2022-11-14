@@ -27,7 +27,7 @@ const Quiz = () => {
       )}
       {!quizState.showResults && (
         <div>
-          <div className="score"> [BSF-Quiz]<br/>
+          <div className="score"> [BSF_Quiz]<br/>
             Question {quizState.currentQuestionIndex + 1}/
             {quizState.questions.length}
           </div>
