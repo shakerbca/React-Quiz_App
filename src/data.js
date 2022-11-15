@@ -139,7 +139,7 @@ const data = [
 
     {
       question: "What will be the output of the following code? <script> let ans=6 / '3'; document.write( typeof ans ); </script>",
-      incorrectAnswers: ["None of the above", "'integer'", "'string'"],
+      incorrectAnswers: ["None of the above.", "'integer'", "'string'"],
       correctAnswer: "'number'",
     },
   ];
