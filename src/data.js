@@ -133,8 +133,8 @@ const data = [
 
     {
       question: "What will be the output of the following code? <script>  document.write(typeof('1'+2))  </script>",
-      incorrectAnswers: ["'boolean'", "'number'", "None of the above"],
-      correctAnswer: "'string'",
+      incorrectAnswers: ["'boolean.'", "'number.'", "None of the above."],
+      correctAnswer: "'string.'",
     },
 
     {
