@@ -1,65 +1,146 @@
 const data = [
     {
-      question: "What does CSS stand for?",
+      question: "Which of the following is an advantage of using JavaScript?",
       incorrectAnswers: [
-        "Computer Style Sheets",
-        "Creative Style Sheets",
-        "Colorful Style Sheets",
+        "Less server interaction",
+        "Immediate feedback to the visitors",
+        "Increased interactivity",
       ],
-      correctAnswer: "Cascading Style Sheets",
+      correctAnswer: "All of the above.",
     },
   
     {
       question:
-        "Where in an HTML document is the correct place to refer to an external style sheet?",
+        "Can you assign a anonymous function to a variable?",
       incorrectAnswers: [
-        "In the <body> section",
-        "At the end of the document",
-        "You can't refer to an external style sheet",
+        "myFunction()",
+        "false",
+        "Function",
       ],
-      correctAnswer: "In the <head> section",
+      correctAnswer: "true",
     },
     {
-      question: "Which HTML tag is used to define an internal style sheet?",
-      incorrectAnswers: ["<script>", "<headStyle>", "<css>"],
-      correctAnswer: "<style>",
+      question: "Which of the following type of variable takes precedence over other if names are same?",
+      incorrectAnswers: ["global variable", "Both of the above.", "None of the above."],
+      correctAnswer: "local variable",
     },
     {
-      question: "Which HTML attribute is used to define inline styles?",
-      incorrectAnswers: ["class", "font", "styles"],
-      correctAnswer: "style",
+      question: "Which built-in method reverses the order of the elements of an array?",
+      incorrectAnswers: ["changeOrder(order)", "sort(order)", "None of the above."],
+      correctAnswer: "reverse()",
     },
     {
-      question: "Which is the correct CSS syntax?",
+      question: "Which of the following function of Array object applies a function simultaneously against two values of the array (from right-to-left) as to reduce it to a single value?",
       incorrectAnswers: [
-        "{body:color=black;}",
-        "{body;color:black;}",
-        "body:color=black;",
+        "pop()",
+        "push()",
+        "reduce()",
       ],
-      correctAnswer: "body {color: black;}",
+      correctAnswer: "reduceRight()",
     },
     {
-      question: "How do you insert a comment in a CSS file?",
+      question: "If you type the following code in the console window, what result will you get? 3 > 2 > 1 === false;",
       incorrectAnswers: [
-        "' this is a comment",
-        "// this is a comment",
-        "// this is a comment //",
+        "3",
+        "false",
+        "12",
       ],
-      correctAnswer: "/* this is a comment */",
+      correctAnswer: "true",
     },
     {
-      question: "Which property is used to change the background color?",
-      incorrectAnswers: ["color", "bgcolor", "bgColor"],
-      correctAnswer: "background-color",
+      question: "Which of the following will write the message “Hello DataFlair!” in an alert box?",
+      incorrectAnswers: ["alertBox(“Hello DataFlair!”);", "alert(Hello DataFlair!);", "msgAlert(“Hello DataFlair!”);"],
+      correctAnswer: "alert(“Hello DataFlair!”);",
     },
     {
-      question: "How do you add a background color for all <h1> elements?",
+      question: "How do you find the minimum of x and y using JavaScript?",
       incorrectAnswers: [
-        "all.h1 {background-color:#FFFFFF;}",
-        "h1.setAll {background-color:#FFFFFF;}",
-        "h1.all {background-color:#FFFFFF;}",
+        "min(x,y);",
+        "Math.min(xy)",
+        "min(xy);",
       ],
-      correctAnswer: "h1 {background-color:#FFFFFF;}",
+      correctAnswer: "Math.min(x,y)",
+    },
+
+
+
+
+
+
+
+
+    {
+      question: "Which of the following statements will throw an error? Please select 2 correct answers",
+      incorrectAnswers: ["var fun = function bar( ){ }", "function fun( ){ }",],
+      correctAnswer: "var fun = function bar{ }",
+      correctAnswer: "function( ){ }",
+    },
+
+    {
+      question: "If the value of x is 40, then what is the output of the following program? (x % 10 == 0)? console.log(“Divisible by 10”) : console.log(“Not divisible by 10”);",
+      incorrectAnswers: ["ReferenceError", "Not divisible by 10", "None of the above"],
+      correctAnswer: "Divisible by 10",
+    },
+
+    {
+      question: "Which JavaScript label catches all the values, except for the ones specified?",
+      incorrectAnswers: ["catch", "label", "try"],
+      correctAnswer: "default",
+    },
+
+    {
+      question: "Which are the correct “if” statements to execute certain code if “x” is equal to 2?",
+      incorrectAnswers: ["if(x 2)", "if(x = 2)", "if(x != 2 )"],
+      correctAnswer: "if(x == 2)",
+    },
+
+    {
+      question: "What will the code return? Boolean(3 < 7)",
+      incorrectAnswers: ["false", "NaN", "SyntaxError"],
+      correctAnswer: "true",
+    },
+
+    {
+      question: "What is the output of the following code in the console? var x = 0; function fun(){ ++x; this.x = x; return x; } var bar = new new fun; console.log(bar.x);",
+      incorrectAnswers: ["ReferenceError", "undefined", "1"],
+      correctAnswer: "TypeError",
+    },
+
+    {
+      question: "Which is the correct JavaScript syntax to change the HTML content given below?<p id=”test”>Hello World!</p>",
+      incorrectAnswers: ["document.getElementsById(“test”).innerHTML = “Hello DataFlair!”;", "document.getElementById(test).innerHTML = “Hello DataFlair!”;", "document.getElementByTagName(“p”)[0].innerHTML = “Hello DataFlair!”;"],
+      correctAnswer: "document.getElementById(“test”).innerHTML = “Hello DataFlair!”;",
+    },
+
+    {
+      question: "How many ways are there with which we can declare a variable in javascript?",
+      incorrectAnswers: ["Only one", "Infinitely many", "None of the above"],
+      correctAnswer: "Three",
+    },
+
+    {
+      question: "Is a variable named 'apple' same as 'Apple' in javascript?",
+      incorrectAnswers: ["Yes", "Only when we use 'strict'", "None of the above"],
+      correctAnswer: "No",
+    },
+
+    {
+      question: "Which of the following variable names are correct according to javascript? (select two answer)",
+      incorrectAnswers: ["let 1name;", "let #name;",],
+      correctAnswer: "let_name;",
+      correctAnswer: "let $_name;",
+    },
+
+    {
+      question: "What will be the output of the following code? <script>  document.write(typeof('1'+2))  </script>",
+      incorrectAnswers: ["'boolean'", "'number'", "None of the above"],
+      correctAnswer: "'string'",
+    },
+
+    {
+      question: "What will be the output of the following code? <script> let ans=6 / '3'; document.write( typeof ans ); </script>",
+      incorrectAnswers: ["None of the above", "'integer'", "'string'"],
+      correctAnswer: "'number'",
     },
   ];
   
